@@ -1,3 +1,20 @@
+/*ruta con variables de colores que voy a usar*/
+:root {
+    /* bg colors */
+    --background: #f2f2f2;
+    --bg-primary: #6C733D;
+    --bg-secondary: #9DA65D;
+    --btn-bg: #202426;
+    --bg-grey: #8c8c88;
+    --nav-bg: #202426;
+
+    /* Text colors */
+    --text-nav: #6C733D;
+    --text-white: #f2f2f2;
+    --text-black: #202426;
+}
+
+
 /*navbar*/
 
 /*Scroll behavior smooth para que sea más suave la navegación*/
@@ -8,8 +25,36 @@ html {
     scroll-padding-top: 85px;
 }
 
-/*transition cards*/
+/*hover de los elementos del navbar*/
+.navbar-list a {
+    position: relative;
+    padding: 0;
+}
 
+.navbar-list li a::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: var(--text-white);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.15s ease;
+}
+
+.navbar-list a:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+.navbar-list .button:hover {
+    color: var(--text-nav);
+    font-weight: 900;
+}
+
+/*transition cards*/
 .cards-info:hover {
     transform: scale(1.1);
     cursor: pointer;

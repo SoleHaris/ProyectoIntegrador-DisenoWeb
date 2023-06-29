@@ -70,11 +70,7 @@ header {
 
 .navbar-list a {
     color: var(--text-white);
-    font-size: 18px;
-}
-
-.navbar-list a:hover {
-    color: var(--text-nav);
+    font-size: 20px;
 }
 
 .fa-solid{
@@ -83,28 +79,10 @@ header {
     cursor: pointer;
 }
 
-.fa-solid:hover {
-    color: var(--text-nav);
-}
-
 .navbar-list li:first-child > a {
     font-weight: 900;
 }
 
-.navbar-list li:first-child > a:hover {
-    color: var(--text-nav);
-}
-
-.button {
-    border-radius: 10px;
-    border: 1px solid var(--bg-primary);
-    padding: 5px;
-}
-
-.button:hover {
-    background: var(--background);
-    color: var(--text-nav)
-}
 
 /* HERO - PORTADA */
 #hero {
@@ -126,6 +104,7 @@ header {
     align-items: center;
     text-align: center;
     padding: 15px 5px;
+    font-size: 40px;
 }
 
 #hero p {
@@ -460,7 +439,7 @@ footer .list a {
 }
 
 footer .list a:hover {
-    color: var(--text-nav);
+    font-weight: 900;
 }
 
 
